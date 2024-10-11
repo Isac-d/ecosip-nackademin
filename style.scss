@@ -1,0 +1,120 @@
+@import "./partials/variables.scss";
+@import "./partials/mixins.scss";
+
+// Use SCSS variables to set CSS custom properties (variables)
+:root {
+    --bg-color: #{$bg_color}; // Background color
+    --text-color: #{$text_color}; // Text color
+    --main-color: #{$main_color}; // Main color
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primaryText;
+    @include listTextDecoration();
+}
+
+body {
+    min-height: 100vh;
+    background: $bg_color;
+    color: $text_color;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; // Space between logo, navbar, and main section
+    background: transparent;
+    padding: 20px 10%;
+    transition: all 0.70s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: $main_color;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: $text_color;
+    font-size: 2.0rem;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex; 
+    list-style: none; 
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: $text_color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: all 0.70s ease;
+}
+
+.navbar a:hover {
+    color: $main_color;
+}
+
+.navbar a.active {
+    color: $main_color;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin: 0 15px; 
+    color: $text_color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.70s ease;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user i {
+    color: $main_color;
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover {
+    color: $main_color;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: $text_color;
+    cursor: pointer;
+    z-index: 10001;
+    display: none; //  display only for mobile navigation menu icon
+}
+
+/* ##### Responsive Styles for Mobile Devices ##### */
+@media screen and (max-width: 600px) {
+ 
+}

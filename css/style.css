@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #1d202b;
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: #1d202b;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 10%;
+  transition: all 0.7s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  color: #29fd53;
+  font-size: 28px;
+  margin-right: 3px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: all 0.7s ease;
+}
+
+.navbar a:hover {
+  color: #29fd53;
+}
+
+.navbar a.active {
+  color: #29fd53;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main a {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.7s ease;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user i {
+  color: #29fd53;
+  font-size: 28px;
+  margin-right: 7px;
+}
+
+.main a:hover {
+  color: #29fd53;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/* ##### Responsive Styles for Mobile Devices ##### *//*# sourceMappingURL=style.css.map */
