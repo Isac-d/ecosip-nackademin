@@ -4,9 +4,13 @@
 // Use SCSS variables to set CSS custom properties (variables)
 :root {
     --bg-color: #{$bg-color}; // Background color
-    --text-color: #{$text-main}; // Text color
+    --text-main: #{$text-main};
+    --text-secondary: #{$text-secondary}; // Text color
     --main-color: #{$main-color}; // Main color
+    --main-color-dark: #{$main-color-dark};
+    --secondary-color: #{$secondary-color};
 }
+
 
 * {
     padding: 0;
@@ -19,10 +23,11 @@
 body {
     min-height: 100vh;
     background: $bg-color;
-    color: $text-main;
+    color: $text-secondary;
 }
 
 header {
+
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,9 +36,10 @@ header {
     display: flex; 
     align-items: center; 
     justify-content: space-between; // Space between logo, navbar, and main section
-    background: transparent;
+    background: $main-color;
     padding: 20px 10%;
-    transition: all 0.70s ease;
+    transition: all 0.1s ease-in-out;
+    
 }
 
 .logo {
@@ -42,13 +48,13 @@ header {
 }
 
 .logo i {
-    color: $main-color;
+    color: $main-color-dark;
     font-size: 28px;
     margin-right: 3px;
 }
 
 .logo span {
-    color: $text-main;
+    color: $text-secondary;
     font-size: 2.0rem;
     font-weight: 900;
 }
@@ -63,19 +69,19 @@ header {
 }
 
 .navbar a {
-    color: $text-main;
+    color: $text-secondary;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 5px 0;
-    transition: all 0.70s ease;
+    
 }
 
 .navbar a:hover {
-    color: $main-color;
+    color: $main-color-dark;
 }
 
 .navbar a.active {
-    color: $main-color;
+    color: $main-color-dark;
 }
 
 .main {
@@ -85,10 +91,10 @@ header {
 
 .main a {
     margin: 0 15px; 
-    color: $text-main;
+    color: $text-secondary;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.70s ease;
+    
 }
 
 .user {
@@ -97,18 +103,18 @@ header {
 }
 
 .user i {
-    color: $main-color;
+    color: $main-color-dark;
     font-size: 28px;
     margin-right: 7px;
 }
 
 .main a:hover {
-    color: $main-color;
+    color: $main-color-dark;
 }
 
 #menu-icon {
     font-size: 35px;
-    color: $text-main;
+    color: $text-secondary;
     cursor: pointer;
     z-index: 10001;
     display: none; //  display only for mobile navigation menu icon
