@@ -27,7 +27,6 @@ body {
 }
 
 header {
-
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,7 +38,7 @@ header {
     background: $main-color;
     padding: 20px 10%;
     transition: all 0.1s ease-in-out;
-    
+    height: 120px;
 }
 
 .logo {

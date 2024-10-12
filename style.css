@@ -34,6 +34,7 @@ header {
   background: #6A9C89;
   padding: 20px 10%;
   transition: all 0.1s ease-in-out;
+  height: 120px;
 }
 
 .logo {
