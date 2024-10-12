@@ -11,3 +11,148 @@
     --secondary-color: #{$secondary-color};
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primaryText;
+    @include listTextDecoration();
+}
+
+body {
+    min-height: 100vh;
+    background: $bg-color;
+    color: $text-secondary;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; // Space between logo, navbar, and main section
+    background: $main-color;
+    padding: 20px 10%;
+    transition: all 0.1s ease-in-out;
+    height: 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: $main-color-dark;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: $text-secondary;
+    font-size: 2.0rem;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex; 
+    list-style: none; 
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: $text-secondary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 0;
+    
+}
+
+.navbar a:hover {
+    color: $main-color-dark;
+}
+
+.navbar a.active {
+    color: $main-color-dark;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin: 0 15px; 
+    color: $text-secondary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user i {
+    color: $main-color-dark;
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover {
+    color: $main-color-dark;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: $text-secondary;
+    cursor: pointer;
+    z-index: 10001;
+    display: none; //  display only for mobile navigation menu icon
+}
+
+/* ##### Responsive Styles for Mobile Devices ##### */
+@media (min-width: 250px) and (max-width: 500px) {
+    #menu-icon {
+        display: block;  
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;  
+        width: 220px;
+        background: var(--main-color);
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all 0.7s ease;
+    }
+    .navbar.open {
+        right: 0;  
+    }
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateX(5px);
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open {
+        right: 0;  // 'open' class is added, the navigation menu appears on the screen.
+    }
+}

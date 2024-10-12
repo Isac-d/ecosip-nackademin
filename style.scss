@@ -120,6 +120,40 @@ header {
 }
 
 /* ##### Responsive Styles for Mobile Devices ##### */
-@media screen and (max-width: 600px) {
- 
+@media (min-width: 250px) and (max-width: 500px) {
+    #menu-icon {
+        display: block;  
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;  
+        width: 220px;
+        background: var(--main-color);
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all 0.7s ease;
+    }
+    .navbar.open {
+        right: 0;  
+    }
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateX(5px);
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open {
+        right: 0;  // 'open' class is added, the navigation menu appears on the screen.
+    }
 }
