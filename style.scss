@@ -3,9 +3,9 @@
 
 // Use SCSS variables to set CSS custom properties (variables)
 :root {
-    --bg-color: #{$bg_color}; // Background color
-    --text-color: #{$text_color}; // Text color
-    --main-color: #{$main_color}; // Main color
+    --bg-color: #{$bg-color}; // Background color
+    --text-color: #{$text-main}; // Text color
+    --main-color: #{$main-color}; // Main color
 }
 
 * {
@@ -18,8 +18,8 @@
 
 body {
     min-height: 100vh;
-    background: $bg_color;
-    color: $text_color;
+    background: $bg-color;
+    color: $text-main;
 }
 
 header {
@@ -42,13 +42,13 @@ header {
 }
 
 .logo i {
-    color: $main_color;
+    color: $main-color;
     font-size: 28px;
     margin-right: 3px;
 }
 
 .logo span {
-    color: $text_color;
+    color: $text-main;
     font-size: 2.0rem;
     font-weight: 900;
 }
@@ -63,7 +63,7 @@ header {
 }
 
 .navbar a {
-    color: $text_color;
+    color: $text-main;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 5px 0;
@@ -71,11 +71,11 @@ header {
 }
 
 .navbar a:hover {
-    color: $main_color;
+    color: $main-color;
 }
 
 .navbar a.active {
-    color: $main_color;
+    color: $main-color;
 }
 
 .main {
@@ -85,7 +85,7 @@ header {
 
 .main a {
     margin: 0 15px; 
-    color: $text_color;
+    color: $text-main;
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.70s ease;
@@ -97,18 +97,18 @@ header {
 }
 
 .user i {
-    color: $main_color;
+    color: $main-color;
     font-size: 28px;
     margin-right: 7px;
 }
 
 .main a:hover {
-    color: $main_color;
+    color: $main-color;
 }
 
 #menu-icon {
     font-size: 35px;
-    color: $text_color;
+    color: $text-main;
     cursor: pointer;
     z-index: 10001;
     display: none; //  display only for mobile navigation menu icon
