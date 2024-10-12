@@ -1,13 +1,248 @@
 @import "../../partials/variables.scss";
 @import "../../partials/mixins.scss";
 
-// Use SCSS variables to set CSS custom properties (variables)
-:root {
-    --bg-color: #{$bg-color}; // Background color
-    --text-main: #{$text-main};
-    --text-secondary: #{$text-secondary}; // Text color
-    --main-color: #{$main-color}; // Main color
-    --main-color-dark: #{$main-color-dark};
-    --secondary-color: #{$secondary-color};
+/* Use SCSS variables to set CSS custom properties (variables) */
+
+/* ##### Responsive Styles for Mobile Devices ##### */
+/*Small smartphones [325px -> 425px]*/
+
+@media (min-width: 325px) and (max-width: 425px) {
+    #menu-icon {
+        display: block;  
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;  
+        width: 180px;
+        background: $main-color;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+    .navbar.open {
+        right: 0;  
+    }
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .navbar a:hover {
+        color: $text-secondary;
+        transform: translateX(5px);
+    }
+
+    .navbar a.active {
+        color: $text-secondary;
+    }
+
+    .navbar.open {
+        right: 0;  // 'open' class is added, the navigation menu appears on the screen.
+    }
 }
+
+/*Big smartphones [426px -> 600px]*/
+@media only screen and (max-width: 600px){
+    #menu-icon {
+        display: block; 
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%; 
+        width: 300px;
+        background: $main-color;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all 0.7s ease;
+    }
+ }
+ .navbar.open {
+    right: 0; 
+ }
+ .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    color: $text-secondary;
+ }
+ .navbar a:hover {
+    color: $text-main;
+    transform: translateX(5px);
+ }
+ // Hover effect for links
+ .navbar a.active {
+    color: $text-main;
+    transform: translateX(5px);
+ }
+     // Active link styling
+   .navbar a.active {
+        color: $text-main; // Active link color using SCSS variable
+    }
+    .navbar.open {
+    right: 0;  // 'open' class is added, the navigation menu appears on the screen.
+ }
+
+ /*Tablets [601px -> 1200px]*/
+ @media (min-width: 601px) and (max-width: 1200px) {
+    #menu-icon {
+        display: block;  
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        // right: 2%;
+        right:-100%;
+        width: 270px;
+        height: 30vh;
+        background: $bg-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all .70s ease;
+    }
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .70s ease;
+    }
+    .navbar a:hover {
+        color: $text-secondary;
+        transform: translateX(5px);
+    }
+    .navbar a.active {
+        color: $text-secondary;
+    }
+    .navbar.open {
+        right: 0;  // 'open' class is added, the navigation menu appears on the screen.
+    }
+}
+
+/* big desktop max-width:1280px */
+@media (max-width: 1280px) {
+    header{
+        padding: 14px 2%;
+        transition: 0.5s;;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px ;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primaryText;
+    @include listTextDecoration();
+}
+
+body {
+    min-height: 100vh;
+    background: $bg-color;
+    color: $text-secondary;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; // Space between logo, navbar, and main section
+    background: $main-color;
+    padding: 20px 10%;
+    transition: all 0.1s ease-in-out;
+    height: 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: $main-color-dark;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: $text-secondary;
+    font-size: 2.0rem;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex; 
+    list-style: none; 
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: $text-secondary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 0;
+    
+}
+
+.navbar a:hover {
+    color: $main-color-dark;
+}
+
+.navbar a.active {
+    color: $main-color-dark;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin: 0 15px; 
+    color: $text-secondary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user i {
+    color: $main-color-dark;
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover {
+    color: $main-color-dark;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: $text-secondary;
+    cursor: pointer;
+    z-index: 10001;
+    display: block; 
+}
+// Styling for when the hamburger menu is open (X icon)
+#menu-icon.open {
+    transform: rotate(90deg); // Rotate icon when menu is opened
+}
+
 
