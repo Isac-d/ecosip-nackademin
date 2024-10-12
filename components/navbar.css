@@ -95,7 +95,7 @@ header {
 
 /* ##### Responsive Styles for Mobile Devices ##### */
 /*Small smartphones [325px -> 425px]*/
-@media (min-width: 325px) and (max-width: 425px) {
+@media (width < 601px) {
   .navbar {
     position: absolute;
     top: 100%;
@@ -125,9 +125,9 @@ header {
 }
 /*Big smartphones [426px -> 600px]*/
 /*Tablets [601px -> 1200px]*/
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (601px < width < 1200px) {
   #menu-icon {
-    display: none;
+    display: block;
   }
   .navbar {
     position: absolute;
@@ -157,7 +157,7 @@ header {
   }
 }
 /* big desktop max-width:1280px */
-@media (width > 1280px) {
+@media (width > 1200px) {
   #menu-icon {
     display: none;
   }
