@@ -142,7 +142,7 @@ header {
 
 
  /*Tablets [601px -> 1200px]*/
- @media ( 601px < width < 1200px) {
+ @media ( 601px <= width <= 1200px) {
     #menu-icon {
         display: block;  
     }
