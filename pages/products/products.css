@@ -28,11 +28,29 @@
   width: 251px;
   background: #FFFFFF;
   border: 0.5px solid black;
+  cursor: pointer;
+  transition: all 0.1s;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  background: #eeeeee;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.img-wrapper {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
 }
 
 .product-img {
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.1s;
 }
 
 .card-info-container {
@@ -56,6 +74,11 @@ button {
   cursor: pointer;
   background: #16423C;
   color: white;
+}
+
+button:hover {
+  background-color: #6A9C89;
+  transition: all 0.2s;
 }
 
 .text {
