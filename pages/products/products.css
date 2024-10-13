@@ -1,8 +1,70 @@
-:root {
-  --bg-color: #E9EFEC;
-  --text-main: rgba(0, 0, 0, 0);
-  --text-secondary: white;
-  --main-color: #6A9C89;
-  --main-color-dark: #16423C;
-  --secondary-color: #C4DAD2;
+* {
+  margin: 0;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  gap: 50px;
+}
+@media (width > 650px) {
+  .site-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+}
+
+.product-card {
+  width: 251px;
+  background: #FFFFFF;
+  border: 0.5px solid black;
+}
+
+.product-img {
+  height: 250px;
+  width: 250px;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  padding: 15px;
+}
+
+.price-buy-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 55px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background: #16423C;
+  color: white;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.price {
+  font-weight: bold;
+  color: rgba(102, 102, 102, 0.8705882353);
+}
+
+@media (width > 650px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=products.css.map */

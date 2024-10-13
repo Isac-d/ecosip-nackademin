@@ -52,6 +52,7 @@ header {
 .navbar {
     display: flex; 
     list-style: none; 
+    
 }
 
 .navbar li {
@@ -114,7 +115,6 @@ header {
         background: $main-color;
         flex-direction: column;
         border-radius: 10px;
-
     }
     .navbar.open {
         right: 0;  

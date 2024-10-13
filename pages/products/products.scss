@@ -2,12 +2,74 @@
 @import "../../partials/mixins.scss";
 
 // Use SCSS variables to set CSS custom properties (variables)
-:root {
-    --bg-color: #{$bg-color}; // Background color
-    --text-main: #{$text-main};
-    --text-secondary: #{$text-secondary}; // Text color
-    --main-color: #{$main-color}; // Main color
-    --main-color-dark: #{$main-color-dark};
-    --secondary-color: #{$secondary-color};
+
+*{
+    margin: 0;
+}
+.site-wrapper{
+    min-height: 100vh;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    gap: 50px;
+
+    @media (width > 650px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
 }
 
+.product-card {
+    width: 251px;
+    background: #FFFFFF;
+    border: 0.5px solid black;
+}
+
+.product-img {
+    height: 250px;
+    width: 250px;
+}
+
+.card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    padding: 15px;
+}
+
+.price-buy-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 55px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: $main-color-dark;
+    color: white;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.price {
+    font-weight: bold;
+    color: #666666de;
+
+}
+
+.main {
+    @media (width > 650px) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
