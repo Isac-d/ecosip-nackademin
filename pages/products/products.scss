@@ -7,19 +7,23 @@
     margin: 0;
 }
 .site-wrapper{
-    min-height: 100vh;
+    margin-bottom: 100px;
     margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     color: #000000;
     gap: 50px;
 
     @media (width > 650px) {
         flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 1200px;
+        max-width: 555px;
     }
+    @media (width >= 1200px) {
+        max-width: 1155px;
+    }
+
 }
 
 .product-card {
@@ -67,9 +71,8 @@ button {
 }
 
 .main {
-    @media (width > 650px) {
         display: flex;
         justify-content: center;
-    }
+        min-height: 100vh;
 
 }
