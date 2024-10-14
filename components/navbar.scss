@@ -29,7 +29,7 @@ header {
     justify-content: space-between; // Space between logo, navbar, and main section
     background: $main-color;
     padding: 20px 10%;
-    height: 120px;
+    height: $header-height;
 }
 
 .logo {
