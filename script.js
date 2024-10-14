@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (link.href === currentPath) {
             a.classList.add('active');
         }
-        li.appendChild(a);
         navbar.appendChild(li);
+        li.appendChild(a);
 
     });
 
