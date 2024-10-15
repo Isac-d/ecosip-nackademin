@@ -36,6 +36,7 @@
 
         p {
             line-height: 1.2;
+            max-width: 720px;
         }
 }
 
@@ -93,6 +94,7 @@
     border: 0.3px solid black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    max-width: 390px;
 }
 .stars-pfp {
     display: flex;
