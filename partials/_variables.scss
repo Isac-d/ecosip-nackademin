@@ -1,13 +1,12 @@
-// partials/variables.scss
+$primaryText: 'Poppins', sans-serif;// För rubriker (med Poppins som standard)
+$font-body: 'Roboto', sans-serif;// För brödtext (med Roboto)
+$font-alt: 'Lato', sans-serif;// Alternativ brödtext eller specifika delar (med Lato)
 
-// Define the font-family in all (*)
-$primaryText: 'Poppins', sans-serif;
-
-// Define the colors as SCSS variables
 $bg-color: #E9EFEC; // Background color
 $text-main: #0000;   // Text color
 $text-secondary: #ffff; // Text color
 $main-color: #6A9C89; // Main color
 $main-color-dark: #16423C; // Main color dark
 $secondary-color: #C4DAD2; // Secondary color
- 
+
+$header-height: 120px;
