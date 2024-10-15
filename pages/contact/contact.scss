@@ -1,12 +1,55 @@
-@import "../../partials/variables.scss";
-@import "../../partials/mixins.scss";
+.contact-form {
+    display: flex;
+    flex-direction: column;  // Gör så att alla fält staplas vertikalt
+    gap: 20px;  // Skapar avstånd mellan varje fält
 
-// Use SCSS variables to set CSS custom properties (variables)
-:root {
-    --bg-color: #{$bg-color}; // Background color
-    --text-main: #{$text-main};
-    --text-secondary: #{$text-secondary}; // Text color
-    --main-color: #{$main-color}; // Main color
-    --main-color-dark: #{$main-color-dark};
-    --secondary-color: #{$secondary-color};
+    label {
+        font-size: 16px;
+        color: var(--text-main);
+    }
+
+    input,
+    textarea {
+        margin-top: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;  // Gör fälten breda så att de fyller kolumnen
+        box-sizing: border-box;  // Gör så att padding inte ökar bredden
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 150px;  // Gör textområdet lite större
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 12px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--main-color-dark);
+        }
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;  // Placera radioknapparna vertikalt
+        gap: 10px;  // Skapa avstånd mellan radioknapparna
+        border: none;  // Ta bort standardramen runt fältset
+        padding: 0;
+    }
+
+    legend {
+        margin-bottom: 10px;  // Lägg till utrymme under "Select a topic"
+        font-size: 16px;
+        color: var(--text-main);
+    }
 }
