@@ -10,7 +10,6 @@
     width: 100%;
   }
 }
-/*$breakpoint-desktop*/
 /*$breakpoint-tablet*/
 @media (min-width: 376px) and (max-width: 1024px) {
   figure {
@@ -21,6 +20,7 @@
     width: 100%;
   }
 }
+/*$breakpoint-desktop*/
 section {
   padding: 0;
   display: flex;
@@ -28,7 +28,7 @@ section {
   width: 100%;
 }
 section.showcase {
-  color: black;
+  color: #000;
 }
 section#cta-section {
   background-image: url(../../img/main-img.png);
@@ -47,23 +47,37 @@ article {
 }
 
 figure {
-  border: 8px solid orange;
   padding: 5px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.home-section.showcase p {
+  text-align: left;
+}
+
+.home-section.showcase p.highlight {
+  text-align: center;
 }
 
 p {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Roboto", sans-serif;
 }
 p.highlight {
-  padding-top: 20px;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+p.slogan {
+  padding: 20px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 body {
@@ -74,8 +88,8 @@ a#cta-link {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
-  background-color: #6A9C89;
-  color: #C4DAD2;
+  background-color: #16423C;
+  color: white;
   text-decoration: none;
   border: none;
   border-radius: 0.375rem;
@@ -83,5 +97,5 @@ a#cta-link {
   transition: background-color 0.3s;
 }
 a#cta-link.primary:hover {
-  background-color: #16423C;
+  background-color: #6A9C89;
 }/*# sourceMappingURL=homepage.css.map */
