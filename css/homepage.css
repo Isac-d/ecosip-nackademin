@@ -50,4 +50,20 @@ p {
 
 body {
   padding-top: 120px;
+}
+
+a#cta-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #6A9C89;
+  color: #C4DAD2;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+a#cta-link.primary:hover {
+  background-color: #16423C;
 }/*# sourceMappingURL=homepage.css.map */

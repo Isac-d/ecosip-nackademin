@@ -1,0 +1,145 @@
+/* Use SCSS variables to set CSS custom properties (variables) */
+.navbar.open {
+  display: flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: #E9EFEC;
+  color: white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6A9C89;
+  padding: 20px 10%;
+  height: 120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  color: #16423C;
+  font-size: 28px;
+  margin-right: 3px;
+}
+
+.logo span {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #16423C;
+}
+
+.navbar a.active {
+  color: #16423C;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user i {
+  color: #16423C;
+  font-size: 28px;
+  margin-right: 7px;
+}
+
+#menu-icon {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10001;
+  display: block;
+  transition: all 0.2s;
+}
+
+#menu-icon.open {
+  transform: rotate(90deg);
+}
+
+/* ##### Responsive Styles for Mobile Devices ##### */
+/*Small smartphones [325px -> 425px]*/
+/*Big smartphones [426px -> 600px]*/
+/*Tablets [601px -> 1200px]*/
+@media (width <= 1200px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 290px;
+    height: 352.5px;
+    background: #C4DAD2;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 0;
+  }
+  .navbar li {
+    padding: 20px 0;
+  }
+  .navbar a:hover {
+    color: white;
+    transform: translateX(5px);
+  }
+  .navbar a.active {
+    font-weight: 900;
+    border: 0px 0px 0px 7px solid #6A9C89;
+    color: #16423C;
+    border-left: solid #16423C 9px;
+  }
+  .navbar a {
+    color: #434343;
+    padding: 20px;
+    width: 290px;
+  }
+}
+/* big desktop max-width:1280px */
+@media (width > 1200px) {
+  #menu-icon {
+    display: none;
+  }
+  header {
+    padding: 14px 150px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
