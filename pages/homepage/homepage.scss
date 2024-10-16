@@ -28,6 +28,8 @@ article {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 figure {
@@ -43,21 +45,28 @@ figure {
   text-align: center;
 } 
 
+.home-section.showcase p.header {
+  text-align: center;
+} 
+
 p {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: $font-body;
-
+  font-size: 16px;
+  
+  &.header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+  }
   &.highlight {
-    padding: 18px;
     font-weight: 600;
     font-size: 20px;
   }
   &.slogan {
-    padding: 20px;
+    padding: 16px;
     font-weight: bold;
     font-size: 24px;
   }
