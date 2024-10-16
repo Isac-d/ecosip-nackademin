@@ -26,6 +26,7 @@ section#cta-section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 2.5rem;
 }
 
 article {
