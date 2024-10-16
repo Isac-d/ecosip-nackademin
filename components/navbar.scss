@@ -136,7 +136,7 @@ header {
         
     }
     .navbar li {
-        padding: 20px;
+        padding: 20px 0;
     }
     .navbar a:hover {
         color: $text-secondary;
@@ -147,7 +147,7 @@ header {
         font-weight: 900;
         border: 0px 0px 0px 7px solid $main-color;
         color: $main-color-dark;
-        text-decoration: underline;
+        border-left: solid $main-color-dark 9px;
     }
     .navbar a {
         color: #434343;

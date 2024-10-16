@@ -116,7 +116,7 @@ header {
     gap: 0;
   }
   .navbar li {
-    padding: 20px;
+    padding: 20px 0;
   }
   .navbar a:hover {
     color: white;
@@ -126,7 +126,7 @@ header {
     font-weight: 900;
     border: 0px 0px 0px 7px solid #6A9C89;
     color: #16423C;
-    text-decoration: underline;
+    border-left: solid #16423C 9px;
   }
   .navbar a {
     color: #434343;
