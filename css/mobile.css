@@ -1,21 +1,12 @@
 /*$breakpoint-mobile*/
-@media (max-width: 376px) {
-  article {
-    background: blue;
-    display: flex;
+@media (max-width: 375px) {
+  section {
     flex-direction: column;
-    flex-wrap: wrap;
   }
-  #cta {
-    background: green;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  article {
+    width: 100%;
   }
   figure {
-    border: 8px solid orange;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 }/*# sourceMappingURL=mobile.css.map */

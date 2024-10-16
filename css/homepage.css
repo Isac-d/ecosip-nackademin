@@ -12,6 +12,15 @@
 }
 /*$breakpoint-desktop*/
 /*$breakpoint-tablet*/
+@media (min-width: 376px) and (max-width: 1024px) {
+  figure {
+    width: 100%;
+    color: black;
+  }
+  figureimg {
+    width: 100%;
+  }
+}
 section {
   padding: 0;
   display: flex;
