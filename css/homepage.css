@@ -56,7 +56,12 @@ figure {
 p {
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+p.highlight {
+  padding-top: 20px;
 }
 
 body {
