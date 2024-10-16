@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // declaring variables
     const menuIcon = document.getElementById('menu-icon');
     const navbar = document.querySelector('.navbar');
-    const showcaseLink = document.getElementById('showcase-link');
+    const showcaseLink = document.getElementById('cta-link');
 
     // array of objects for each of the links in the navbar
     const links = [
