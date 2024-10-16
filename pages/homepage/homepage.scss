@@ -43,9 +43,11 @@ p {
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: $font-body;
 
   &.highlight {
     padding-top: 20px;
+    font-weight: bold;
   }
 }
 
