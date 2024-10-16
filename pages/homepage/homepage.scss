@@ -1,145 +1,46 @@
 @import "../../partials/variables.scss";
 @import "../../partials/mixins.scss";
 
+@import "./mobile.scss"; 
+@import "./desktop.scss"; 
+@import "./tablet.scss";
+
+section {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &.showcase {
+      color: black;
+  }
+  &#cta-section{
+      background-image: url(../../img/main-img.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  border: 8px solid orange;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+}
+
 body {
-    padding-top: $header-height; // Push everything below the fixed header
-    min-height: 100vh;
-    background: $bg-color;
-    color: $text-main; 
+  padding-top: $header-height;
 }
-#showcase-link {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    background-color: $main-color-dark;
-    color: $text-secondary;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-
-  &:hover {
-    background-color: $main-color;
-}
-@media (max-width:500px){
-    width: 120px;
-    height: 40px;
-    font-size: 0.775rem;
-    text-align: center;
-    padding: 0.5rem 1rem;
-}
-@media(min-width: 501px){
-    width: 200px;
-    height: 50px;
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-  }
-}
-
-.home-section {
-    background-color: $bg-color;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
- 
-    &.home-content {
-      font-family: $font-body;
-      max-width: 800px;
-      margin: 0 auto;
-  
-      p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        color: $text-secondary;
-  
-        &.highlight {
-          font-size: 1.75rem;
-          font-weight: bold;
-          color:$main-color-dark;
-          margin-bottom: 1rem;
-        }
-  
-        &.slogan {
-          font-size: 1.5rem;
-          color: $main-color-dark;
-          margin: 1rem 0;
-        }
-      }
-  
-      .button {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        margin-top: 1rem;
-        background-color: $main-color;
-        color: $secondary-color;
-        text-decoration: none;
-        border: none;
-        border-radius: 0.375rem;
-        cursor: pointer;
-        transition: background-color 0.3s;
-  
-        &.primary:hover {
-          background-color: $main-color-dark;
-        }
-      }
-    }
-  
-    .home-image {
-      max-height: 500px; 
-      overflow: hidden; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-  
-      img {
-          max-width: 100%; 
-          max-height: 100%; 
-          object-fit: contain; 
-      }
-  }
-  
-  @media (min-width: 501px) {
-    .home-image {
-        width: 540px;
-        height: 400px; 
-        img {
-            width: 100%; 
-            height: 100%; 
-            object-fit: contain; 
-        }
-    }
-}
-
-    // Specific ID for background image
-    &#showcase {
-        background-image: url('../../img/main-img.png'); // Update path accordingly
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
-#cta {
-  .home-content {
-      p {
-          color: $main-color-dark; 
-          
-          &.highlight {
-              font-size: 1.75rem;
-              font-weight: bold;
-              margin-bottom: 1rem;
-          }
-
-          &.slogan {
-              font-size: 1.5rem;
-              margin: 1rem 0;
-          }
-      }
-  }
-}
-
-  

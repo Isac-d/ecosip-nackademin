@@ -1,0 +1,17 @@
+/*$breakpoint-mobile*/
+@media (max-width: $breakpoint-mobile) {
+
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+}
+   
