@@ -1,4 +1,13 @@
+@import "../../partials/variables.scss";
+
 /*$breakpoint-tablet*/
 @media (min-width: ($breakpoint-mobile + 1)) and (max-width: $breakpoint-desktop) {
+    figure {
+        width: 100%;
+        color: black;
+        &img {
+            width: 100%;
+        }
+    }
 }
   
