@@ -52,10 +52,16 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+.contact-form-section .contact-form .input-name-email {
+  padding: 10px;
+  border: solid 1px black;
+}
 .contact-form-section .contact-form fieldset {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 5px;
+  border: none;
 }
 .contact-form-section .contact-form fieldset .topic {
   display: flex;
@@ -100,6 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 320px;
 }
 .contact-right .contact-info .info-item {
   display: flex;
