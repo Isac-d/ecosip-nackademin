@@ -9,6 +9,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
 }
+@media (min-width: 768px) {
+  body {
+    padding-top: 0px;
+  }
+}
 
 main {
   display: flex;
@@ -16,6 +21,15 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+@media (min-width: 768px) {
+  main {
+    min-height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .container {
@@ -130,6 +144,7 @@ main {
   }
   .contact-form-section {
     margin-right: 20px;
+    width: 400px;
   }
   .contact-right {
     align-items: flex-start;

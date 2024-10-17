@@ -12,6 +12,9 @@ body {
   padding-top: 120px;
   font-family: $primaryText;
   background-color: var(--bg-color);
+  @media (min-width: 768px){
+    padding-top: 0px;
+  }
 }
 
 main {
@@ -20,7 +23,14 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+  @media (min-width: 768px) {
+    min-height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     }
+  }
 
 // Layout för container
 .container {
@@ -153,6 +163,7 @@ main {
 
   .contact-form-section {
     margin-right: 20px; // Ge utrymme mellan kolumnerna
+    width: 400px;
   }
 
   .contact-right {
@@ -160,7 +171,6 @@ main {
       display: block;
       width: 600px;
     }
-
     align-items: flex-start;
     text-align: left;
   }
