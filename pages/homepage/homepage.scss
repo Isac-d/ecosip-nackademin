@@ -22,21 +22,12 @@ section {
   }
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 figure {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 .home-section.showcase p {
   text-align: left;
@@ -74,6 +65,7 @@ p {
 
 body {
   padding-top: $header-height;
+  min-height: 150vh;
 }
 
 a#cta-link {
