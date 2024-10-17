@@ -1,15 +1,20 @@
 @import "../../partials/variables.scss";
 @import "../../partials/mixins.scss";
 
-@import "./mobile.scss"; 
-@import "./tablet.scss";
-@import "./desktop.scss"; 
+
+
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 section {
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
+  
   &.showcase {
       color: $text-main;
   }
@@ -23,12 +28,6 @@ section {
 }
 
 
-figure {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 150px;
-}
 .home-section.showcase p {
   text-align: left;
 }
@@ -61,6 +60,10 @@ p {
     font-weight: bold;
     font-size: 24px;
   }
+}
+
+.image-two {
+  width: 200px;
 }
 
 body {

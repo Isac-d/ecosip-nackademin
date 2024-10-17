@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*$breakpoint-mobile*/
 @media (max-width: 375px) {
   section {
@@ -72,10 +73,17 @@
     height: auto;
   }
 }
+=======
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+>>>>>>> 1c98ab732036bfdf4bd7d7dec5745a4cccf35789
 section {
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
 }
 section.showcase {
@@ -89,6 +97,7 @@ section#cta-section {
   padding: 2.5rem;
 }
 
+<<<<<<< HEAD
 figure {
   padding: 5px;
   display: flex;
@@ -96,6 +105,8 @@ figure {
   margin-bottom: 150px;
 }
 
+=======
+>>>>>>> 1c98ab732036bfdf4bd7d7dec5745a4cccf35789
 .home-section.showcase p {
   text-align: left;
 }
@@ -128,6 +139,10 @@ p.slogan {
   padding: 16px;
   font-weight: bold;
   font-size: 24px;
+}
+
+.image-two {
+  width: 200px;
 }
 
 body {
