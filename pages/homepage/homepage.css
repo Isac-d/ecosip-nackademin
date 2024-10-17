@@ -63,18 +63,20 @@ body {
   min-height: 150vh;
 }
 
-a#cta-link {
+button#cta-link {
   display: inline-block;
   padding: 0.75rem 1.5rem;
+  width: 170px;
   margin-top: 1rem;
-  background-color: #16423C;
+  background-color: transparent;
   color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: 400;
   text-decoration: none;
-  border: none;
-  border-radius: 0.375rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-a#cta-link.primary:hover {
+button#cta-link.primary:hover {
   background-color: #6A9C89;
 }/*# sourceMappingURL=homepage.css.map */
