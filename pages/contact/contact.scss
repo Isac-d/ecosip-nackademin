@@ -8,18 +8,18 @@
   box-sizing: border-box;
 }
 
-main{
+body {
+  padding-top: 120px;
+  font-family: $primaryText;
+  background-color: var(--bg-color);
+}
+
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-body {
-  padding-top: 120px;
-  font-family: $primaryText;
-  background-color: var(--bg-color);
 }
 
 // Layout för container
@@ -34,13 +34,13 @@ body {
   @media (min-width: 768px) {
     flex-direction: row; // På större skärmar: två kolumner
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 100px;
   }
 }
 
 // Kontaktformuläret - vänstra kolumnen
 .contact-form-section {
-  width: 320px; // Ta upp hela bredden på mobil
+  width: 320px; 
   max-width: 600px; // Begränsa bredden för desktop
   background-color: #fff;
   padding: 20px;
@@ -58,37 +58,33 @@ body {
     flex-direction: column;
     gap: 15px;
 
-    .input-name-email{
+    .input-name-email {
       padding: 10px;
       border: solid 1px black;
     }
+
     fieldset {
       display: flex;
       flex-direction: column;
       gap: 10px;
       padding: 5px;
       border: none;
-      .topic{
+
+      .topic {
         display: flex;
         gap: 10px;
-
       }
     }
-
 
     label {
       font-size: 16px;
     }
 
-  
     textarea {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;
       width: 100%;
-    }
-
-    textarea {
       min-height: 120px;
     }
 
@@ -109,7 +105,6 @@ body {
 }
 
 // Högra kolumnen - Kontaktinformation
-
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -121,11 +116,12 @@ body {
     display: none;
     width: 400px;
   }
+
   .contact-info {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 320px;;
+    width: 320px;
 
     .info-item {
       display: flex;
@@ -146,9 +142,10 @@ body {
 
 // Anpassningar för desktop
 @media (min-width: 768px) {
-  .contact-image{
+  .contact-image {
     display: none;
   }
+
   .contact-form-section,
   .contact-right {
     flex: 1; // Låt båda sektionerna ta lika mycket plats
@@ -159,17 +156,17 @@ body {
   }
 
   .contact-right {
-    .contact-image-desktop{
-    display: block;
-    width: 400px;
-  }
-  
+    .contact-image-desktop {
+      display: block;
+      width: 600px;
+    }
+
     align-items: flex-start;
     text-align: left;
   }
 }
 
-// Bilden ska vara högst upp
+// Bilden ska vara högst upp - Mobile
 .contact-header {
   width: 100%;
   text-align: center;
