@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 body {
   padding-top: 120px;
   font-family: $primaryText;
@@ -18,9 +26,8 @@ body {
 .container {
   display: flex;
   flex-direction: column; // Mobil först: stapla allt vertikalt
+  justify-content: center;
   align-items: center;
-  padding-top: 120px;
-  padding: 20px;
   gap: 20px;
   color: black;  
 
@@ -33,7 +40,7 @@ body {
 
 // Kontaktformuläret - vänstra kolumnen
 .contact-form-section {
-  width: 100%; // Ta upp hela bredden på mobil
+  width: 320px; // Ta upp hela bredden på mobil
   max-width: 600px; // Begränsa bredden för desktop
   background-color: #fff;
   padding: 20px;
@@ -96,6 +103,7 @@ body {
 }
 
 // Högra kolumnen - Kontaktinformation
+
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -103,6 +111,9 @@ body {
   text-align: center;
   gap: 20px;
 
+  .contact-image-desktop {
+    display: none;
+  }
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -127,6 +138,9 @@ body {
 
 // Anpassningar för desktop
 @media (min-width: 768px) {
+  .contact-image{
+    display: none;
+  }
   .contact-form-section,
   .contact-right {
     flex: 1; // Låt båda sektionerna ta lika mycket plats
@@ -137,6 +151,11 @@ body {
   }
 
   .contact-right {
+    .contact-image-desktop{
+    display: block;
+    width: 400px;
+  }
+  
     align-items: flex-start;
     text-align: left;
   }
