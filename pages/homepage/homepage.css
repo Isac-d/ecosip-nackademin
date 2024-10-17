@@ -1,26 +1,8 @@
-/*$breakpoint-mobile*/
-@media (max-width: 375px) {
-  section {
-    flex-direction: column;
-  }
-  article {
-    width: 100%;
-  }
-  figure {
-    width: 100%;
-  }
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-/*$breakpoint-tablet*/
-@media (min-width: 376px) and (max-width: 1024px) {
-  figure {
-    width: 100%;
-    color: black;
-  }
-  figureimg {
-    width: 100%;
-  }
-}
-/*$breakpoint-desktop*/
+
 section {
   padding: 0;
   display: flex;
@@ -36,23 +18,6 @@ section#cta-section {
   background-position: center;
   background-repeat: no-repeat;
   padding: 2.5rem;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-figure {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
 }
 
 .home-section.showcase p {
@@ -89,8 +54,13 @@ p.slogan {
   font-size: 24px;
 }
 
+.image-two {
+  width: 200px;
+}
+
 body {
   padding-top: 120px;
+  min-height: 150vh;
 }
 
 a#cta-link {
