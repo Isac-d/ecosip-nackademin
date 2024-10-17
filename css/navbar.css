@@ -61,7 +61,7 @@ header {
   font-size: 1.1rem;
   font-weight: 600;
   padding: 5px 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s;
 }
 
 .navbar a:hover {
@@ -124,14 +124,21 @@ header {
     transform: translateX(5px);
   }
   .navbar a.active {
+<<<<<<< HEAD
     font-weight: 900;
     border: 0px 0px 0px 7px solid #6a9c89;
     color: #16423c;
     border-left: solid #16423c 9px;
+=======
+    font-weight: 700;
+    border: 0px 0px 0px 7px solid #6A9C89;
+    color: #16423C;
+    border-left: solid #16423C 9px;
+>>>>>>> 41ddc0f (commit test)
   }
   .navbar a {
     color: #434343;
-    padding: 20px;
+    padding: 20px 150px 20px 20px;
     width: 290px;
   }
 }
