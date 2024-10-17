@@ -1,1 +1,27 @@
-/*$breakpoint-desktop*//*# sourceMappingURL=desktop.css.map */
+@media (min-width: 769px) and (max-width: 1400px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+  section article {
+    flex: 1 1 48%;
+    padding: 20px;
+  }
+  section figure {
+    flex: 0 0 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=desktop.css.map */
