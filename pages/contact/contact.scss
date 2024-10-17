@@ -9,6 +9,7 @@
 }
 
 body {
+  padding-top: 120px;
   font-family: $primaryText;
   background-color: var(--bg-color);
 }
@@ -18,6 +19,7 @@ body {
   display: flex;
   flex-direction: column; // Mobil först: stapla allt vertikalt
   align-items: center;
+  padding-top: 120px;
   padding: 20px;
   gap: 20px;
   color: black;  
@@ -132,6 +134,7 @@ body {
 .contact-header {
   width: 100%;
   text-align: center;
+  margin-top: 0px;
 
   .contact-image {
     width: 100%;
