@@ -51,11 +51,23 @@ body {
     flex-direction: column;
     gap: 15px;
 
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .topic{
+        display: flex;
+        gap: 10px;
+
+      }
+    }
+
+
     label {
       font-size: 16px;
     }
 
-    input,
+  
     textarea {
       padding: 10px;
       border: 1px solid #ccc;

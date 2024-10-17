@@ -45,10 +45,18 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+.contact-form-section .contact-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-form-section .contact-form fieldset .topic {
+  display: flex;
+  gap: 10px;
+}
 .contact-form-section .contact-form label {
   font-size: 16px;
 }
-.contact-form-section .contact-form input,
 .contact-form-section .contact-form textarea {
   padding: 10px;
   border: 1px solid #ccc;
