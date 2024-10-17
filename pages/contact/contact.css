@@ -101,6 +101,7 @@ body {
 }
 .contact-right .contact-image-desktop {
   display: none;
+  width: 400px;
 }
 .contact-right .contact-info {
   display: flex;
