@@ -1,85 +1,8 @@
-<<<<<<< HEAD
-/*$breakpoint-mobile*/
-@media (max-width: 375px) {
-  section {
-    flex-direction: column;
-  }
-  article {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  figure {
-    width: 100%;
-  }
-}
-@media (min-width: 769px) and (max-width: 1400px) {
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 10px;
-    width: 100%;
-  }
-  section article {
-    flex: 1 1 60%;
-    padding: 20px;
-    order: 1;
-  }
-  section figure {
-    flex: 1 1 40%;
-    padding: 20px;
-    order: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  section img {
-    max-width: 400px;
-    max-height: 400px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1400px) {
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-  }
-  section article {
-    flex: 1 1 48%;
-    padding: 20px;
-  }
-  section figure {
-    flex: 0 0 400px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-  }
-  section img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-=======
 .site-wrapper {
   display: flex;
   flex-direction: column;
 }
 
->>>>>>> 1c98ab732036bfdf4bd7d7dec5745a4cccf35789
 section {
   padding: 0;
   display: flex;
@@ -97,16 +20,6 @@ section#cta-section {
   padding: 2.5rem;
 }
 
-<<<<<<< HEAD
-figure {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 150px;
-}
-
-=======
->>>>>>> 1c98ab732036bfdf4bd7d7dec5745a4cccf35789
 .home-section.showcase p {
   text-align: left;
 }
@@ -150,7 +63,7 @@ body {
   min-height: 150vh;
 }
 
-button#cta-link {
+a#cta-link {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   width: 170px;
@@ -164,6 +77,6 @@ button#cta-link {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-button#cta-link.primary:hover {
+a#cta-link.primary:hover {
   background-color: #6A9C89;
 }/*# sourceMappingURL=homepage.css.map */
