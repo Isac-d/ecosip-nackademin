@@ -19,3 +19,12 @@
   font-size: 18px;
 }
 
+@mixin oval-border {
+  border-radius: 50%;
+  border: 2px solid $secondary-color;
+}
+
+@mixin responsive-img {
+  max-width: 100%;
+  height: auto;
+}
