@@ -1,11 +1,6 @@
 @import "../../partials/variables.scss";
 @import "../../partials/mixins.scss";
 
-$header-height: 120px;
-$breakpoint-mobile-small: 320px;
-$breakpoint-mobile: 375px;
-$breakpoint-tablet: 768px;
-
 body {
   padding-top: $header-height;
   font-family: $font-body;
@@ -13,6 +8,10 @@ body {
   color: $text-main;
 }
 
+.main-wrapper{
+    min-height: 170vh;
+    margin-bottom: 150px;
+}
 
 h1, h2 {
   font-family: $primaryText;
@@ -76,7 +75,7 @@ p {
 .team-member {
   text-align: left;
   width: 100%;
-  max-width: 150px;
+  max-width: 250px;
   padding: 20px;
   border-right: 2px solid $secondary-color; 
 }
