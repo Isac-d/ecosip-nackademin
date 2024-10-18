@@ -63,7 +63,7 @@ p {
 
 .team-members {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
 }
@@ -72,8 +72,9 @@ p {
   text-align: left;
   width: 100%;
   max-width: 250px;
-  padding: 20px;
-  border-right: 2px solid #C4DAD2;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .team-member img {
@@ -102,11 +103,25 @@ p {
   margin: 5px 0;
 }
 
+.team-member::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 3px;
+  height: 100%;
+  background-color: #C4DAD2;
+}
+
 @media (min-width: 768px) {
   .team-member {
     max-width: 200px;
+    padding: 10px;
   }
   .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: flex-start;
   }
 }

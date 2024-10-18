@@ -2,16 +2,16 @@
 @import "../../partials/mixins.scss";
 
 body {
-  padding-top: $header-height;
-  font-family: $font-body;
-  background-color: $bg-color;
-  color: $text-main;
-}
-
-.main-wrapper{
-    min-height: 170vh;
-    margin-bottom: 150px;
-}
+    padding-top: $header-height;
+    font-family: $font-body;
+    background-color: $bg-color;
+    color: $text-main;
+  }
+  
+  .main-wrapper{
+      min-height: 170vh;
+      margin-bottom: 150px;
+  }
 
 h1, h2 {
   font-family: $primaryText;
@@ -21,7 +21,7 @@ h1, h2 {
 }
 
 a {
-  color:$text-main;
+  color: $text-main;
 }
 
 .about-container {
@@ -43,41 +43,43 @@ a {
     color: $main-color-dark; 
   }
 }
+
 p {
-    color: $text-main;
+  color: $text-main;
 }
+
 .video-wrapper {
-    padding: 20px;
-    border: 5px solid $main-color;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    display: inline-block; 
-    background-color:$main-color-dark;
-    border-radius: 5px;
-    max-width: 320px; 
-    margin: 0 auto; 
+  padding: 20px;
+  border: 5px solid $main-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: inline-block; 
+  background-color: $main-color-dark;
+  border-radius: 5px;
+  max-width: 320px; 
+  margin: 0 auto; 
 }
 
 .video-wrapper iframe {
-    width: 100%; 
-    height: auto; 
-    aspect-ratio: 16/9; 
-    border: none; 
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 16/9; 
+  border: none; 
 }
-
 
 .team-members {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; 
+  gap: 20px; 
   justify-content: flex-start;
 }
 
 .team-member {
   text-align: left;
-  width: 100%;
-  max-width: 250px;
-  padding: 20px;
-  border-right: 2px solid $secondary-color; 
+  width: 100%; 
+  max-width: 250px; 
+  padding: 10px; 
+  margin: 0 auto; 
+  position: relative; 
 }
 
 .team-member img {
@@ -104,13 +106,26 @@ p {
   margin: 5px 0;
 }
 
-// Media Queries
+.team-member::after {
+  content: "";
+  position: absolute; 
+  top: 0; 
+  right: -3px; 
+  width: 3px; 
+  height: 100%; 
+  background-color: $secondary-color;
+}
+
 @media (min-width: $breakpoint-tablet) {
   .team-member {
     max-width: 200px;
+    padding: 10px; 
   }
 
   .team-members {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     justify-content: flex-start;
   }
 }
