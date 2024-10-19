@@ -54,16 +54,14 @@ section#cta-section {
   }
 
   &:hover {
-    @include img-tow-hover;
+    box-shadow: 0px 8px 15px rgba($main-color-dark, 0.7);
+    transition: box-shadow 0.3s ease;
   }
 }
 
 // Paragraph styles
 p {
-  text-align: center;
-  padding-bottom: 20px;
-  font-family: $font-body;
-  font-size: 18px;
+  @include paragraphStyles(center, 20px);
   
   &.header {
     @include header-text-styling;
@@ -85,7 +83,7 @@ p {
   }
 }
 
-@include mediaquery(tablet){
+@media (min-width: $breakpoint-tablet) {
   section {
     margin-bottom: 50px;
   }
@@ -93,3 +91,4 @@ p {
     margin-bottom: 30px;
   }
 }
+
