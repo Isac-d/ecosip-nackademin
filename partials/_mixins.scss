@@ -1,4 +1,4 @@
-@mixin flex-colum {
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +53,7 @@
   flex-direction: row;
 }
 
-@mixin img-tow-hover {
+@mixin img-two-hover {
   box-shadow: 0px 8px 15px rgba($main-color-dark, 0.7);
   transition: box-shadow 0.3s ease;
 }
@@ -77,12 +77,23 @@
   list-style: none;
 }
 
-@mixin paragraphStyles {
+@mixin paragraphStyles($text-align: center, $padding-bottom: 20px) {
   width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
+  text-align: $text-align;
+  padding-bottom: $padding-bottom;
   font-family: $font-body; 
   font-size: 18px;
+}
+
+@mixin responsive-img {
+  width: 100%;           
+  height: auto;      
+  max-width: 100%;   
+}
+
+@mixin oval-border($border-color: $main-color, $border-width: 2px) {
+  border: $border-width solid $border-color; 
+  border-radius: 50%; 
 }
 
 // Image styles mixin
@@ -103,7 +114,6 @@
   color: $main-color-dark;
 }
 
-// CTA link styles mixin
 @mixin cta-link-display {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -121,6 +131,17 @@
   &.primary:hover {
     background-color: $main-color;
   }
+}
+@mixin image-two-styling {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 360px;
+  max-width: 95%;
+  height: auto;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba($main-color, 0.5);
 }
 
 // Mixin for media queries

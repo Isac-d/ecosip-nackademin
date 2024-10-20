@@ -2,9 +2,8 @@
 @import "../../partials/mixins.scss";
 
 body {
-  padding-top: $header-height; 
+  padding-top: $header-height;
 }
-
 .site-wrapper {
   @include flex-column;
   min-height: 145vh;
@@ -15,51 +14,103 @@ section {
   padding: 0;
   width: 100%;
   justify-content: center;
+
+  &.showcase {
+    color: $text-main;
+    margin-bottom: 20px; 
+  }
+
+  &#cta-section {
+    background-image: url(../../img/main-img.png);
+    @include showcaseBg();
+    padding: 2.5rem;
+  }
 }
 
-section.showcase {
-  color: $text-main;
-  margin-bottom: 20px;
+a#cta-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  width: 170px;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: $text-secondary;
+  border: 2px solid $text-secondary;
+  border-radius: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &.primary:hover {
+    background-color: $main-color;
+  }
 }
-
-section#cta-section {
-  @include showcaseBg;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 2.5rem;
-}
-
 #showcase {
   @include flex-column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  @include showcase-items;
+
+  @include mediaquery(mobile) {
+    margin-bottom: 30px;
+    .home-content {
+      gap: 30px;
+    }
+  }
 
   @include mediaquery(tablet) {
-    padding: 30px;
-    flex-direction: row;
+    @include hoem-tablet-row;
   }
 }
 
-.image-two {
-  @include image-styling;
+.image-content {
+  @include flex-column;
+  align-items: center;
+}
 
-  @include mediaquery(tablet) {
-    max-width: 100%;
-    height: 350px;
-  }
+.home-section.showcase p {
+  text-align: left;
+  padding: 20px;
+  font-family: $font-body;
+}
+.home-section.showcase p.highlight,
+.home-section.showcase p.header {
+  text-align: center;
+}
+.image-two {
+  @include image-two-styling;
 
   &:hover {
     box-shadow: 0px 8px 15px rgba($main-color-dark, 0.7);
     transition: box-shadow 0.3s ease;
   }
+
+  @include mediaquery(tablet) {
+    @include home-mediaquery-tablet;
+
+    .home-content {
+      @include home-content-tablet;
+    }
+
+    .home-content p {
+      flex: 2;
+      text-align: left;
+    }
+
+    .home-content img {
+      flex: 1;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
 }
 
 p {
-  @include paragraphStyles(center, 20px);
-  
+  @include paragraphStyles(); 
+
   &.header {
-    @include header-text-styling;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: $main-color-dark;
   }
 
   &.highlight {
@@ -72,14 +123,25 @@ p {
     font-weight: bold;
     font-size: 28px;
 
-    @include mediaquery(tablet) {
+    @include mediaquery(tablet){
       font-size: 30px;
     }
   }
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    font-size: 20px;
+  }
 }
 
-// @media (min-width: $breakpoint-tablet) {}
-  @include mediaquery(tablet) {
+@include mediaquery(tablet) {
+  #showcase {
+    margin-bottom: 20px; 
+  }
+  .home-content {
+    gap: 30px; 
+  }
+}
+@include mediaquery(tablet){
   section {
     margin-bottom: 50px;
   }
@@ -87,4 +149,3 @@ p {
     margin-bottom: 30px;
   }
 }
-
