@@ -77,10 +77,9 @@
   list-style: none;
 }
 
-@mixin paragraphStyles($text-align: center, $padding-bottom: 20px) {
+@mixin paragraphStyles($text-align: center) {
   width: 100%;
   text-align: $text-align;
-  padding-bottom: $padding-bottom;
   font-family: $font-body; 
   font-size: 18px;
 }
@@ -152,3 +151,6 @@
     }
   }
 }
+
+
+
