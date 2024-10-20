@@ -2,7 +2,7 @@
 @import "../../partials/mixins.scss";
 
 body {
-  padding-top: $header-height; // Using variable for header height
+  padding-top: $header-height; 
 }
 
 .site-wrapper {
@@ -17,13 +17,11 @@ section {
   justify-content: center;
 }
 
-// Showcase section
 section.showcase {
   color: $text-main;
   margin-bottom: 20px;
 }
 
-// CTA section
 section#cta-section {
   @include showcaseBg;
   flex-wrap: wrap;
@@ -31,7 +29,6 @@ section#cta-section {
   padding: 2.5rem;
 }
 
-// Showcase styles
 #showcase {
   @include flex-column;
   align-items: center;
@@ -44,7 +41,6 @@ section#cta-section {
   }
 }
 
-// Image styling
 .image-two {
   @include image-styling;
 
@@ -59,7 +55,6 @@ section#cta-section {
   }
 }
 
-// Paragraph styles
 p {
   @include paragraphStyles(center, 20px);
   
@@ -83,7 +78,8 @@ p {
   }
 }
 
-@media (min-width: $breakpoint-tablet) {
+// @media (min-width: $breakpoint-tablet) {}
+  @include mediaquery(tablet) {
   section {
     margin-bottom: 50px;
   }
