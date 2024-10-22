@@ -2,12 +2,6 @@
 @import "../partials/mixins.scss";
 @import 'footer.scss';
 
-/* Use SCSS variables to set CSS custom properties (variables) */
-.navbar.open {
-    display: flex;
-    
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +24,7 @@ header {
     z-index: 1000;
     display: flex; 
     align-items: center; 
-    justify-content: space-between; // Space between logo, navbar, and main section
+    justify-content: space-between; 
     background: $main-color;
     padding: 20px 10%;
     height: $header-height;
@@ -56,21 +50,31 @@ header {
 .navbar {
     display: flex; 
     list-style: none; 
-    gap: 40px;
-    
+    gap: 40px; 
 }
 
+// Hidden by default on mobile
+.navbar {
+    display: none; 
+}
 
-
+.navbar.open {
+    display: flex; 
+    flex-direction: column; 
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    width: 290px; 
+    background: $main-color; 
+    border-radius: 10px;
+}
 
 .navbar a {
     color: $text-secondary;
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 5px 0;
-    transition: all 0.2s ;
-
-    
+    padding: 5px 20px; 
+    transition: all 0.2s;
 }
 
 .navbar a:hover {
@@ -80,7 +84,6 @@ header {
 .navbar a.active {
     color: $main-color-dark;
 }
-
 
 .user {
     display: flex;
@@ -93,7 +96,6 @@ header {
     margin-right: 7px;
 }
 
-
 #menu-icon {
     font-size: 40px;
     color: $text-secondary;
@@ -103,36 +105,32 @@ header {
     transition: all 0.2s;
 }
 
-// Styling for when the hamburger menu is open (X icon)
 #menu-icon.open {
     transform: rotate(90deg);
 }
 
-
-
-
-
-
- @media ( width <= 1200px) {
+@media (max-width: 1200px) {
     #menu-icon {
         display: block;  
     }
+
     .navbar {
-        display: none;
-        position: absolute;
-        top: 120px;
-        right: 0;
-        width: 290px;
-        height: 352.5px;
-        background: #C4DAD2;
-        flex-direction: column;
-        border-radius: 10px;
-        gap: 0;
-        
+        display: none; 
     }
+
+    .navbar.open {
+        display: flex; 
+    }
+
     .navbar li {
-        padding: 20px 0;
+        padding: 20px 0; 
     }
+
+    .navbar a {
+        padding: 20px 20px; 
+        width: 290px; 
+    }
+
     .navbar a:hover {
         color: $text-secondary;
         transform: translateX(5px);
@@ -140,28 +138,24 @@ header {
     
     .navbar a.active {
         font-weight: 700;
-        border: 0px 0px 0px 7px solid $main-color;
-        color: $main-color-dark;
         border-left: solid $main-color-dark 9px;
+        color: $main-color-dark;
     }
-    .navbar a {
-        color: #434343;
-        padding: 20px 150px 20px 20px;
-        width: 290px;
-    }
-    
-
 }
 
-/* big desktop max-width:1280px */
-@media (width > 1200px) {
+@media (min-width: 1201px) {
     #menu-icon {
         display: none;  
     }
   
-    header{
-        padding: 14px 150px;
+    .navbar {
+        display: flex; 
+        position: relative; 
+        flex-direction: row; 
+        gap: 40px; 
     }
-
     
+    header {
+        padding: 14px 150px; 
+    }
 }

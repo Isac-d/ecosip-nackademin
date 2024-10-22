@@ -80,11 +80,6 @@ footer {
   }
 }
 
-/* Use SCSS variables to set CSS custom properties (variables) */
-.navbar.open {
-  display: flex;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -137,11 +132,26 @@ header {
   gap: 40px;
 }
 
+.navbar {
+  display: none;
+}
+
+.navbar.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 290px;
+  background: #6A9C89;
+  border-radius: 10px;
+}
+
 .navbar a {
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 5px 0;
+  padding: 5px 20px;
   transition: all 0.2s;
 }
 
@@ -177,24 +187,22 @@ header {
   transform: rotate(90deg);
 }
 
-@media (width <= 1200px) {
+@media (max-width: 1200px) {
   #menu-icon {
     display: block;
   }
   .navbar {
     display: none;
-    position: absolute;
-    top: 120px;
-    right: 0;
-    width: 290px;
-    height: 352.5px;
-    background: #C4DAD2;
-    flex-direction: column;
-    border-radius: 10px;
-    gap: 0;
+  }
+  .navbar.open {
+    display: flex;
   }
   .navbar li {
     padding: 20px 0;
+  }
+  .navbar a {
+    padding: 20px 20px;
+    width: 290px;
   }
   .navbar a:hover {
     color: white;
@@ -202,20 +210,19 @@ header {
   }
   .navbar a.active {
     font-weight: 700;
-    border: 0px 0px 0px 7px solid #6A9C89;
-    color: #16423C;
     border-left: solid #16423C 9px;
-  }
-  .navbar a {
-    color: #434343;
-    padding: 20px 150px 20px 20px;
-    width: 290px;
+    color: #16423C;
   }
 }
-/* big desktop max-width:1280px */
-@media (width > 1200px) {
+@media (min-width: 1201px) {
   #menu-icon {
     display: none;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 40px;
   }
   header {
     padding: 14px 150px;
