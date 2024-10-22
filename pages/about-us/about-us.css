@@ -45,7 +45,7 @@ a {
 
 .video-wrapper {
   padding: 20px;
-  border: 5px solid #6A9C89;
+  border: 5px solid #273c34;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: inline-block;
   background-color: #16423C;
@@ -78,7 +78,7 @@ a {
 }
 
 .team-member img {
-  border: 2px solid #6A9C89;
+  border: 2px solid #273c34;
   border-radius: 50%;
   width: 100%;
   height: auto;
@@ -97,7 +97,7 @@ a {
 }
 
 .team-member a {
-  color: #6A9C89;
+  color: #273c34;
   text-decoration: none;
   font-size: 14px;
   display: block;
