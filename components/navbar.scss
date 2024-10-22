@@ -78,11 +78,11 @@ header {
 }
 
 .navbar a:hover {
-    color: $navbar-color;
+    color: $button-hover;
 }
 
 .navbar a.active {
-    color: $navbar-color;
+    color: $button-hover;
 }
 
 .user {
@@ -138,8 +138,8 @@ header {
     
     .navbar a.active {
         font-weight: 700;
-        border-left: solid $main-color-dark 9px;
-        color: $main-color-dark;
+        border-left: solid $button-hover 9px;
+        color: $button-hover;
     }
 }
 

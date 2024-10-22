@@ -143,8 +143,8 @@ header {
   top: 120px;
   right: 0px;
   width: 290px;
-  background: #6A9C89;
-  border-radius: 10px;
+  background: #273c34;
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar a {
@@ -156,11 +156,11 @@ header {
 }
 
 .navbar a:hover {
-  color: #7CABA0;
+  color: #6A9C89;
 }
 
 .navbar a.active {
-  color: #7CABA0;
+  color: #6A9C89;
 }
 
 .user {
@@ -210,8 +210,8 @@ header {
   }
   .navbar a.active {
     font-weight: 700;
-    border-left: solid #16423C 9px;
-    color: #16423C;
+    border-left: solid #6A9C89 9px;
+    color: #6A9C89;
   }
 }
 @media (min-width: 1201px) {
