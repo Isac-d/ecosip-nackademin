@@ -44,7 +44,7 @@ a#cta-link {
   transition: background-color 0.3s;
 }
 a#cta-link.primary:hover {
-  background-color: #6A9C89;
+  background-color: #273c34;
 }
 
 #showcase {
@@ -96,7 +96,7 @@ a#cta-link.primary:hover {
   height: auto;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(106, 156, 137, 0.5);
+  box-shadow: 0px 4px 10px rgba(39, 60, 52, 0.5);
 }
 .image-two:hover {
   box-shadow: 0px 8px 15px rgba(22, 66, 60, 0.7);

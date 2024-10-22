@@ -77,12 +77,13 @@ button {
     height: 30px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
     background: $main-color-dark;
     color: white;
 }
 
 button:hover{
-    background-color: $main-color;
+    background-color: $button-hover;
     transition: all 0.2s;
 }
 

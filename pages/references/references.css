@@ -2,7 +2,7 @@
   --bg-color: #E9EFEC;
   --text-main: #000;
   --text-secondary: white;
-  --main-color: #6A9C89;
+  --main-color: #273c34;
   --main-color-dark: #16423C;
   --secondary-color: #C4DAD2;
 }
@@ -77,7 +77,7 @@
   border: none;
   border-radius: 4px;
   background: var(--main-color-dark);
-  color: var(--text-secondary);
+  color: white;
   cursor: pointer;
   transition: all 0.2s;
 }
