@@ -12,10 +12,16 @@ body {
   padding-top: 120px;
   font-family: $primaryText;
   background-color: var(--bg-color);
-  @media (min-width: 768px){
+  
+  @media (min-width: 768px) {
     padding-top: 120px;
   }
-  @media (min-width: 1900px){
+  
+  @media (min-width: 1200px) {
+    padding-top: 100px; // Justerat för mellanstora skärmar
+  }
+
+  @media (min-width: 1900px) {
     padding-top: 0px;
   }
 }
@@ -26,14 +32,14 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
+
   @media (min-width: 768px) {
     min-height: 100vh;
     margin-top: 0px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-     }
   }
+}
 
 // Layout för container
 .container {
@@ -42,18 +48,23 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: black;  
+  color: black;
+  flex-wrap: wrap; // Lägg till flex-wrap för att förhindra överflöde
 
   @media (min-width: 768px) {
     flex-direction: row; // På större skärmar: två kolumner
     justify-content: space-between;
     gap: 100px;
   }
+
+  @media (min-width: 1200px) {
+    gap: 50px; // Justerat för mellanstora skärmar
+  }
 }
 
 // Kontaktformuläret - vänstra kolumnen
 .contact-form-section {
-  width: 320px; 
+  width: 320px;
   max-width: 600px; // Begränsa bredden för desktop
   background-color: #fff;
   padding: 20px;
@@ -176,6 +187,18 @@ main {
     }
     align-items: flex-start;
     text-align: left;
+  }
+}
+
+// Anpassningar för mellanstora skärmar (1200px)
+@media (min-width: 1200px) {
+  .contact-form-section {
+    width: 350px; // Justera bredden för mellanstora skärmar
+    margin-right: 15px; // Minska marginalen
+  }
+
+  .contact-right .contact-image-desktop {
+    width: 500px; // Justera storleken på bilden för mellanstora skärmar
   }
 }
 
