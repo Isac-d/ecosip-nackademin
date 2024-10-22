@@ -129,7 +129,7 @@ header {
 .navbar {
   display: flex;
   list-style: none;
-  gap: 40px;
+  gap: 10px;
 }
 
 .navbar {
@@ -140,11 +140,11 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
-  right: 10px;
+  top: 120px;
+  right: 0px;
   width: 290px;
   background: #6A9C89;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar a {

@@ -50,7 +50,7 @@ header {
 .navbar {
     display: flex; 
     list-style: none; 
-    gap: 40px; 
+    gap: 10px; 
 }
 
 // Hidden by default on mobile
@@ -62,11 +62,11 @@ header {
     display: flex; 
     flex-direction: column; 
     position: absolute;
-    top: 60px; 
-    right: 10px; 
+    top: 120px; 
+    right: 0px; 
     width: 290px; 
     background: $main-color; 
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .navbar a {
