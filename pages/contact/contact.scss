@@ -1,5 +1,5 @@
 @import "../../partials/variables.scss";
-@import "../../partials/mixins.scss";
+@import "../../partials/mixins.scss";  // Importera mixins
 
 // Allmänt reset och standardinställningar
 * {
@@ -12,16 +12,16 @@ body {
   padding-top: 120px;
   font-family: $primaryText;
   background-color: var(--bg-color);
-  
-  @media (min-width: 768px) {
+
+  @include respond-to(tablet) {
     padding-top: 120px;
   }
-  
-  @media (min-width: 1200px) {
-    padding-top: 100px; // Justerat för mellanstora skärmar
+
+  @include respond-to(desktop) {
+    padding-top: 100px;
   }
 
-  @media (min-width: 1900px) {
+  @include respond-to(large-desktop) {
     padding-top: 0px;
   }
 }
@@ -33,7 +33,7 @@ main {
   align-items: center;
   gap: 10px;
 
-  @media (min-width: 768px) {
+  @include respond-to(tablet) {
     min-height: 100vh;
     margin-top: 0px;
     flex-direction: column;
@@ -51,13 +51,13 @@ main {
   color: black;
   flex-wrap: wrap; // Lägg till flex-wrap för att förhindra överflöde
 
-  @media (min-width: 768px) {
+  @include respond-to(tablet) {
     flex-direction: row; // På större skärmar: två kolumner
     justify-content: space-between;
     gap: 100px;
   }
 
-  @media (min-width: 1200px) {
+  @include respond-to(desktop) {
     gap: 50px; // Justerat för mellanstora skärmar
   }
 }
@@ -165,7 +165,7 @@ main {
 }
 
 // Anpassningar för desktop
-@media (min-width: 768px) {
+@include respond-to(tablet) {
   .contact-image {
     display: none;
   }
@@ -191,7 +191,7 @@ main {
 }
 
 // Anpassningar för mellanstora skärmar (1200px)
-@media (min-width: 1200px) {
+@include respond-to(desktop) {
   .contact-form-section {
     width: 350px; // Justera bredden för mellanstora skärmar
     margin-right: 15px; // Minska marginalen
