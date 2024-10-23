@@ -1,7 +1,7 @@
 @import "../../partials/variables.scss";
-@import "../../partials/mixins.scss";  // Importera mixins
+@import "../../partials/mixins.scss";  
+@import "../../partials/contact.mixins.scss"; 
 
-// Allmänt reset och standardinställningar
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 body {
   padding-top: 120px;
   font-family: $primaryText;
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 
   @include respond-to(tablet) {
     padding-top: 120px;

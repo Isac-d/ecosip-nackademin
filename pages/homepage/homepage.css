@@ -16,7 +16,7 @@ section {
   justify-content: center;
 }
 section.showcase {
-  color: #000;
+  color: #000000;
   margin-bottom: 20px;
 }
 section#cta-section {
@@ -35,8 +35,8 @@ a#cta-link {
   width: 170px;
   margin-top: 1rem;
   background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 25px;
   font-weight: 400;
   text-decoration: none;

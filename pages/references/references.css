@@ -1,7 +1,7 @@
 :root {
   --bg-color: #E9EFEC;
-  --text-main: #000;
-  --text-secondary: white;
+  --text-main: #000000;
+  --text-secondary: #ffffff;
   --main-color: #273c34;
   --main-color-dark: #16423C;
   --secondary-color: #C4DAD2;
@@ -77,7 +77,7 @@
   border: none;
   border-radius: 4px;
   background: var(--main-color-dark);
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   transition: all 0.2s;
 }
