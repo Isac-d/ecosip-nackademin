@@ -2,7 +2,7 @@ body {
   padding-top: 120px;
   font-family: "Roboto", sans-serif;
   background-color: #E9EFEC;
-  color: #000;
+  color: #000000;
 }
 
 .main-wrapper {
@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 a {
-  color: #000;
+  color: #000000;
 }
 
 .about-container {
@@ -40,7 +40,7 @@ a {
 }
 
 .about-us p {
-  color: #000;
+  color: #000000;
 }
 
 .video-wrapper {

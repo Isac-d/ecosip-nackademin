@@ -1,7 +1,7 @@
 @import "../../partials/variables.scss";
-@import "../../partials/mixins.scss";  // Importera mixins
+@import "../../partials/mixins.scss";  
+@import "../../partials/contact.mixins.scss"; 
 
-// Allmänt reset och standardinställningar
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 body {
   padding-top: 120px;
   font-family: $primaryText;
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 
   @include respond-to(tablet) {
     padding-top: 120px;
@@ -66,7 +66,7 @@ main {
 .contact-form-section {
   width: 320px;
   max-width: 600px; // Begränsa bredden för desktop
-  background-color: #fff;
+  background-color: $text-secondary;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -106,7 +106,7 @@ main {
 
     textarea {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #cccccc;
       border-radius: 4px;
       width: 100%;
       min-height: 120px;
@@ -115,7 +115,7 @@ main {
     button {
       padding: 12px;
       background-color: $main-color-dark;
-      color: white;
+      color: $text-secondary;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -172,11 +172,11 @@ main {
 
   .contact-form-section,
   .contact-right {
-    flex: 1; // Låt båda sektionerna ta lika mycket plats
+    flex: 1; 
   }
 
   .contact-form-section {
-    margin-right: 20px; // Ge utrymme mellan kolumnerna
+    margin-right: 20px; 
     width: 400px;
   }
 
@@ -193,7 +193,7 @@ main {
 // Anpassningar för mellanstora skärmar (1200px)
 @include respond-to(desktop) {
   .contact-form-section {
-    width: 350px; // Justera bredden för mellanstora skärmar
+    width: 350px; 
     margin-right: 15px; // Minska marginalen
   }
 
